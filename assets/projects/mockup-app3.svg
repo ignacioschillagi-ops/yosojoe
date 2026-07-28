@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" width="480" height="300">
+  <rect width="480" height="300" rx="16" fill="#14150F"/>
+  <rect width="480" height="34" rx="16" fill="#1A1B14"/>
+  <circle cx="20" cy="17" r="5" fill="#83604C"/>
+  <circle cx="38" cy="17" r="5" fill="#9B9B9B"/>
+  <circle cx="56" cy="17" r="5" fill="#729632"/>
+  <rect x="0" y="34" width="480" height="266" fill="#0E0F0A"/>
+  <rect x="40" y="70" width="400" height="24" rx="6" fill="#83604C" opacity="0.85"/>
+  <rect x="40" y="110" width="260" height="14" rx="4" fill="#2B2C22"/>
+  <rect x="40" y="134" width="320" height="14" rx="4" fill="#2B2C22"/>
+  <rect x="40" y="170" width="120" height="60" rx="10" fill="#83604C" opacity="0.5"/>
+  <rect x="176" y="170" width="120" height="60" rx="10" fill="#83604C" opacity="0.3"/>
+  <rect x="312" y="170" width="128" height="60" rx="10" fill="#83604C" opacity="0.15"/>
+  <text x="240" y="260" font-family="Arial, sans-serif" font-size="16" fill="#A6A79C" text-anchor="middle">NombreApp3 — mockup de ejemplo</text>
+</svg>
