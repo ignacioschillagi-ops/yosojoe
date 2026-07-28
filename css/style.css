@@ -193,7 +193,7 @@ section { padding: 88px 0; }
 
 .hero-avatar {
   width: 100%;
-  max-width: 468px;
+  max-width: 515px;
   aspect-ratio: 1 / 1;
   will-change: transform;
 }
@@ -452,7 +452,7 @@ section { padding: 88px 0; }
   }
   .hero-actions { justify-content: center; }
   .hero-visual { order: -1; }
-  .hero-avatar { max-width: 270px; }
+  .hero-avatar { max-width: 297px; }
 }
 
 @media (max-width: 720px) {
