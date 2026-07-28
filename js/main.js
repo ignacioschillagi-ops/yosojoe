@@ -81,9 +81,38 @@ function setupModals() {
   });
 }
 
+function setupParallax() {
+  const el = document.querySelector(".hero-avatar");
+  if (!el) return;
+
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (prefersReducedMotion) return;
+
+  const speed = 0.15; // qué tan rápido se mueve respecto al scroll (0 = fijo, 1 = igual que el scroll)
+  let ticking = false;
+
+  function update() {
+    const offset = window.scrollY * speed;
+    el.style.transform = `translateY(${offset}px)`;
+    ticking = false;
+  }
+
+  window.addEventListener(
+    "scroll",
+    () => {
+      if (!ticking) {
+        window.requestAnimationFrame(update);
+        ticking = true;
+      }
+    },
+    { passive: true }
+  );
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   renderProjects();
   setupModals();
+  setupParallax();
 
   // Menú mobile
   const toggle = document.getElementById("nav-toggle");

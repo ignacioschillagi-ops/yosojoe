@@ -181,6 +181,7 @@ section { padding: 88px 0; }
 .hero-visual {
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 
 .hero-avatar-frame {
@@ -192,9 +193,10 @@ section { padding: 88px 0; }
 
 .hero-avatar {
   width: 100%;
-  max-width: 520px;
+  max-width: 468px;
   height: auto;
   object-fit: contain;
+  will-change: transform;
 }
 
 /* ---------- Projects ---------- */
@@ -449,7 +451,7 @@ section { padding: 88px 0; }
   }
   .hero-actions { justify-content: center; }
   .hero-visual { order: -1; }
-  .hero-avatar { max-width: 300px; }
+  .hero-avatar { max-width: 270px; }
 }
 
 @media (max-width: 720px) {
