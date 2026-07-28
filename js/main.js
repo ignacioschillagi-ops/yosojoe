@@ -36,8 +36,54 @@ function renderProjects() {
   if (countEl) countEl.textContent = PROJECTS.length;
 }
 
+function setupModals() {
+  const openTriggers = document.querySelectorAll("[data-modal-open]");
+  const closeButtons = document.querySelectorAll("[data-modal-close], .modal-close");
+
+  function openModal(id) {
+    const modal = document.getElementById(id);
+    if (!modal) return;
+    modal.classList.add("open");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.classList.add("modal-locked");
+  }
+
+  function closeModal(modal) {
+    if (!modal) return;
+    modal.classList.remove("open");
+    modal.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("modal-locked");
+  }
+
+  openTriggers.forEach((trigger) => {
+    trigger.addEventListener("click", (e) => {
+      e.preventDefault();
+      openModal(trigger.getAttribute("data-modal-open"));
+    });
+  });
+
+  closeButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      closeModal(btn.closest(".modal-overlay"));
+    });
+  });
+
+  document.querySelectorAll(".modal-overlay").forEach((overlay) => {
+    overlay.addEventListener("click", (e) => {
+      if (e.target === overlay) closeModal(overlay);
+    });
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      document.querySelectorAll(".modal-overlay.open").forEach(closeModal);
+    }
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   renderProjects();
+  setupModals();
 
   // Menú mobile
   const toggle = document.getElementById("nav-toggle");

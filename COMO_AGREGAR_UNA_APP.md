@@ -32,11 +32,17 @@ Guardá el archivo. La tarjeta nueva va a aparecer sola en la sección "Mis apps
 
 Abrí `index.html` en el navegador (doble clic) y confirmá que la tarjeta se vea bien.
 
+## Editar "Sobre mí" y los links de contacto
+
+- El texto de "Sobre mí" ahora se abre como ventana emergente (modal). Está en `index.html`, dentro del bloque `<div class="modal-overlay" id="about-modal">`.
+- Los links de Behance, Instagram y Portfolio completo están en la sección de Contacto de `index.html` (buscá `social-links`). Reemplazá las URLs placeholder (`tu-usuario`, `tu-portfolio-extendido.com`) por las tuyas.
+- El mail de contacto es el `href="mailto:..."` del botón "Escribirme", en la misma sección.
+
 ## Publicar la página
 
 Es un sitio estático (HTML/CSS/JS puro), así que se puede subir gratis a:
 
-- **Netlify** o **Vercel**: arrastrás la carpeta `yosoyjoe` y listo.
+- **Netlify** o **Vercel**: conectás el repo de GitHub y listo.
 - **GitHub Pages**: subís la carpeta a un repo y activás Pages.
 
-No requiere backend ni base de datos.
+No requiere backend ni base de datos. Al subir a GitHub, usá `git` (no el uploader web) para que se preserven las subcarpetas `css/`, `js/` y `assets/`.

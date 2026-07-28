@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>YoSoyJoe — Publicista, Diseñador Multimedia & Apps con AI</title>
 <meta name="description" content="Portfolio de Joe: Publicista y Diseñador Multimedia con experiencia en Argentina y Europa. Apps prácticas y gratuitas potenciadas con AI." />
-<link rel="icon" href="assets/logos/avatar-placeholder.svg" />
+<link rel="icon" href="assets/logos/favicon.svg" />
 <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -13,11 +13,12 @@
 <header class="header">
   <div class="container header-inner">
     <a href="#top" class="brand">
+      <img src="assets/logos/favicon.svg" alt="" class="brand-favicon" />
       <img src="assets/logos/yosoyjoe-logo.svg" alt="YoSoyJoe" class="brand-logo" />
     </a>
     <nav class="nav" id="nav-menu">
-      <a href="#sobre-mi">Sobre mí</a>
       <a href="#proyectos">Proyectos</a>
+      <a href="#" id="nav-about-trigger" data-modal-open="about-modal">Sobre mí</a>
       <a href="#contacto">Contacto</a>
     </nav>
     <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">
@@ -42,29 +43,14 @@
         </p>
         <div class="hero-actions">
           <a href="#proyectos" class="btn btn-primary">Ver mis apps</a>
-          <a href="#contacto" class="btn btn-ghost">Contactarme</a>
+          <a href="#" class="btn btn-ghost" data-modal-open="about-modal">Sobre mí</a>
         </div>
       </div>
       <div class="hero-visual">
-        <img src="assets/logos/avatar-placeholder.svg" alt="Joe" class="hero-avatar" />
+        <div class="hero-avatar-frame">
+          <img src="assets/logos/logo-mark.svg" alt="Logo YoSoyJoe" class="hero-avatar" />
+        </div>
       </div>
-    </div>
-  </section>
-
-  <!-- SOBRE MI -->
-  <section class="about" id="sobre-mi">
-    <div class="container about-inner">
-      <h2>Sobre mí</h2>
-      <p>
-        Soy Publicista y Diseñador Multimedia, con una trayectoria construida entre Argentina y Europa
-        trabajando en comunicación, marca y experiencias digitales. Con el avance de la tecnología y el
-        mundo AI, me lancé a diseñar y desarrollar aplicaciones prácticas que resuelven problemas reales,
-        pensadas para que cualquier persona las use gratis, con sus propias API keys autogestionables.
-      </p>
-      <p>
-        Esta página reúne esos proyectos: cada uno con su mockup, su logo, una descripción breve y el
-        enlace para probarlo. Te invito a explorarlas y usarlas.
-      </p>
     </div>
   </section>
 
@@ -86,7 +72,30 @@
     <div class="container contact-inner">
       <h2>¿Charlamos?</h2>
       <p>Si querés proponerme un proyecto, sumar una idea de app o simplemente saludar, escribime.</p>
-      <a href="mailto:tu-email@ejemplo.com" class="btn btn-primary">Escribirme</a>
+      <a href="mailto:josediazschillagi@gmail.com" class="btn btn-primary">Escribirme</a>
+
+      <div class="social-links">
+        <a href="https://www.behance.net/tu-usuario" target="_blank" rel="noopener noreferrer" class="social-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 4.5h9.5c2.4 0 4.2 1.3 4.2 3.5 0 1.5-.7 2.5-2 3.1 1.8.5 2.9 1.8 2.9 3.7 0 2.8-2.3 4.2-5 4.2H0V4.5zm3.4 6.2h5.3c1.2 0 2-.6 2-1.7 0-1.1-.8-1.7-2-1.7H3.4v3.4zm0 6.4h5.6c1.3 0 2.2-.7 2.2-1.9 0-1.2-.9-1.9-2.2-1.9H3.4v3.8zM15 8.8h7.7v1.6H15V8.8zM24 15.8c0-.1 0-.4 0-.6-.2-2.8-2.1-4.8-4.9-4.8-3 0-5 2.1-5 5.1 0 3.1 2 5 5.1 5 2.3 0 4-1.1 4.6-3h-2.7c-.4.7-1 1-1.9 1-1.4 0-2.2-.9-2.3-2.3H24v-.4zm-7.1-1.6c.2-1.2 1-1.9 2.2-1.9 1.1 0 1.9.8 2 1.9h-4.2z" fill="currentColor"/>
+          </svg>
+          Behance
+        </a>
+        <a href="https://www.instagram.com/tu-usuario" target="_blank" rel="noopener noreferrer" class="social-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.8"/>
+            <circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.8"/>
+            <circle cx="17.4" cy="6.6" r="1.1" fill="currentColor"/>
+          </svg>
+          Instagram
+        </a>
+        <a href="https://tu-portfolio-extendido.com" target="_blank" rel="noopener noreferrer" class="social-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 3h7v7M21 3l-9 9M19 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Portfolio completo
+        </a>
+      </div>
     </div>
   </section>
 
@@ -98,6 +107,21 @@
     <p>&copy; <span id="year"></span> YoSoyJoe. Publicista &amp; Diseñador Multimedia — Apps con AI, gratis para todos.</p>
   </div>
 </footer>
+
+<!-- MODAL: SOBRE MI -->
+<div class="modal-overlay" id="about-modal" aria-hidden="true">
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="about-modal-title">
+    <button class="modal-close" id="about-modal-close" aria-label="Cerrar">&times;</button>
+    <h2 id="about-modal-title">Sobre mí</h2>
+    <p>
+      Soy Publicista y Diseñador Multimedia, con una trayectoria construida entre Argentina y Europa
+      trabajando en comunicación, marca y experiencias digitales. Con el avance de la tecnología y el
+      mundo AI, me lancé a diseñar y desarrollar aplicaciones prácticas que resuelven problemas reales,
+      pensadas para que cualquier persona las use gratis, con sus propias API keys autogestionables.
+    </p>
+    <p>Te invito a explorarlas y usarlas.</p>
+  </div>
+</div>
 
 <script src="js/projects-data.js"></script>
 <script src="js/main.js"></script>
