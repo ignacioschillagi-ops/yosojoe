@@ -22,45 +22,46 @@
 
 const PROJECTS = [
   {
-    title: "Nombre de tu App 1",
-    description: "Descripción breve: qué problema resuelve esta app y cómo usa AI para lograrlo. Contá también que es gratuita y fácil de usar.",
-    logo: "assets/projects/logo-app1.svg",
-    mockup: "assets/projects/mockup-app1.svg",
-    url: "https://tu-app-1.com",
-    tags: ["AI", "Gratis"]
-  },
-  {
-    title: "Nombre de tu App 2",
-    description: "Descripción breve: qué problema resuelve esta app y cómo usa AI para lograrlo. Contá también que es gratuita y fácil de usar.",
-    logo: "assets/projects/logo-app2.svg",
-    mockup: "assets/projects/mockup-app2.svg",
-    url: "https://tu-app-2.com",
-    tags: ["AI", "Gratis"]
-  },
-  {
-    title: "Nombre de tu App 3",
-    description: "Descripción breve: qué problema resuelve esta app y cómo usa AI para lograrlo. Contá también que es gratuita y fácil de usar.",
-    logo: "assets/projects/logo-app3.svg",
-    mockup: "assets/projects/mockup-app3.svg",
-    url: "https://tu-app-3.com",
-    tags: ["AI", "Gratis"]
-  },
-  {
-    title: "Nombre de tu App 4",
-    description: "Descripción breve: qué problema resuelve esta app y cómo usa AI para lograrlo. Contá también que es gratuita y fácil de usar.",
-    logo: "assets/projects/logo-app4.svg",
-    mockup: "assets/projects/mockup-app4.svg",
-    url: "https://tu-app-4.com",
-    tags: ["AI", "Gratis"]
-  },
-  {
-    title: "Nombre de tu App 5",
-    description: "Descripción breve: qué problema resuelve esta app y cómo usa AI para lograrlo. Contá también que es gratuita y fácil de usar.",
-    logo: "assets/projects/logo-app5.svg",
-    mockup: "assets/projects/mockup-app5.svg",
-    url: "https://tu-app-5.com",
-    tags: ["AI", "Gratis"]
-  }
+  title: "Aiva!",
+  description: "Soy tu asesora de moda personal! Además de darte consejos de moda, ayuda a recomendar el talle exacto de una tabla de talles, y a estimar las medidas de una prenda de referencia.",
+  logo: "assets/projects/logo-aiva.png",
+  mockup: "assets/projects/mockup-aiva.png",
+  url: "https://ai-vapp.vercel.app/",
+  tags: ["AI", "Moda", "Compras online", "Gratis"]
+},
+{
+  title: "Timbapp",
+  description: "Una app para usar con tus amigos. En base a lo que tengas a mano, elegí tu categoría y qué te gustaría jugar. Adentro de cada juego vas a encontrar instrucciones detalladas y un anotador personalizado, listo para jugar.",
+  logo: "assets/projects/logo-timbapp.png",
+  mockup: "assets/projects/mockup-timbapp.png",
+  url: "https://timbapp.vercel.app/",
+  tags: ["Con Amigos", "Cartas", "Dados", "Juegos", "Gratis"]
+},
+{
+  title: "Tanapp",
+  description: "Questa è un'app per praticare la conversazione in italiano. Ti aiuta a migliorare la lingua con esercizi e chiacchiere.",
+  logo: "assets/projects/logo-tanapp.png",
+  mockup: "assets/projects/mockup-tanapp.png",
+  url: "https://tanapp-it.vercel.app/",
+  tags: ["AI", "Italiano", "Idioma", "Gratis"]
+},
+{
+  title: "Average Joe's",
+  description: "Es tu organizador AI de rutinas de entrenamiento: pensala como una carpeta con todas las que necesites para cada momento — la del gimnasio, una para cuando viajás, otra para entrenar en casa, una de calistenia al aire libre, o hasta una para hacer con amigos.",
+  logo: "assets/projects/logo-joes.png",
+  mockup: "assets/projects/mockup-joes.png",
+  url: "https://average-joes-app.vercel.app/",
+  tags: ["AI", "Gym", "Rutinas", "Gratis"]
+},
+{
+  title: "D-Rol",
+  description: "Un juego de rol narrativo con IA como Dungeon Master. Creás tu personaje, tomás decisiones y vivís una aventura épica generada en tiempo real. El mundo recuerda todo lo que hacés.",
+  logo: "assets/projects/logo-drol.png",
+  mockup: "assets/projects/mockup-drol.png",
+  url: "https://d-rol.vercel.app/",
+  tags: ["AI", "D&D", "Juego", "Rol", "Gratis"]
+}
+
 
   /* 👇 Para sumar la 6ta app, descomentá y completá este bloque:
   ,{
