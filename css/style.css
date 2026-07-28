@@ -194,10 +194,11 @@ section { padding: 88px 0; }
 .hero-avatar {
   width: 100%;
   max-width: 468px;
-  height: auto;
-  object-fit: contain;
+  aspect-ratio: 1 / 1;
   will-change: transform;
 }
+
+.hero-avatar svg { display: block; }
 
 /* ---------- Projects ---------- */
 .section-heading {

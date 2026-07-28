@@ -109,10 +109,24 @@ function setupParallax() {
   );
 }
 
+function setupHeroLottie() {
+  const container = document.getElementById("hero-lottie");
+  if (!container || typeof lottie === "undefined") return;
+
+  lottie.loadAnimation({
+    container: container,
+    renderer: "svg",
+    loop: true,
+    autoplay: true,
+    path: "assets/logos/loguito.json"
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   renderProjects();
   setupModals();
   setupParallax();
+  setupHeroLottie();
 
   // Menú mobile
   const toggle = document.getElementById("nav-toggle");
