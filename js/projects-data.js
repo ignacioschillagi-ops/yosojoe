@@ -60,8 +60,15 @@ const PROJECTS = [
   mockup: "assets/projects/mockup-drol.png",
   url: "https://d-rol.vercel.app/",
   tags: ["AI", "D&D", "Juego", "Rol", "Gratis"]
+},
+{
+  title: "ZAINORG",
+  description: "Armamos tu mochila o valija por vos: contanos tu destino, el clima, cuántos días viajás, con quién vas y qué actividades tenés pensadas, y calculamos qué llevar, cuánto espacio ocupa y qué tamaño de equipaje te conviene.",
+  logo: "assets/projects/logo-zainorg.png",
+  mockup: "assets/projects/mockup-zainorg.png",
+  url: "https://zainorg.vercel.app/",
+  tags: ["AI", "Viajes", "Mochila", "Valija", "Gratis"]
 }
-
 
   /* 👇 Para sumar la 6ta app, descomentá y completá este bloque:
   ,{
