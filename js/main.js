@@ -40,7 +40,7 @@ function renderProjects() {
               data-desc="${escapeAttr(p.description)}"
               data-url="${escapeAttr(p.url)}"
             >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="18" cy="5" r="2.6" stroke="currentColor" stroke-width="1.8"/>
                 <circle cx="6" cy="12" r="2.6" stroke="currentColor" stroke-width="1.8"/>
                 <circle cx="18" cy="19" r="2.6" stroke="currentColor" stroke-width="1.8"/>
