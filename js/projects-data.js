@@ -70,7 +70,7 @@ const PROJECTS = [
   tags: ["AI", "Viajes", "Mochila", "Valija", "Gratis"]
 },
 {
-  title: "Age Of Catan",
+  title: "World Of Catan",
   description: "Un manual con reglas inventadas por mi del mundialmente conocido juego Catan. Estas reglas pensadas para darle más dinámica al juego, equilibrar partidas desparejas, o bien hacerlo mas caotico. Pueden jugarse por separado, usando las que crean convenientes para el desarrollo de la partida. Animate a probarlas!",
   logo: "assets/projects/logo-catanazo.png",
   mockup: "assets/projects/mockup-catanazo.png",
