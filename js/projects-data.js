@@ -71,7 +71,7 @@ const PROJECTS = [
 },
 {
   title: "Age Of Catan",
-  description: "Armamos tu mochila o valija por vos: contanos tu destino, el clima, cuántos días viajás, con quién vas y qué actividades tenés pensadas, y calculamos qué llevar, cuánto espacio ocupa y qué tamaño de equipaje te conviene.",
+  description: "Un manual con reglas inventadas por mi del mundialmente conocido juego Catan. Estas reglas pensadas para darle más dinámica al juego, equilibrar partidas desparejas, o bien hacerlo mas caotico. Pueden jugarse por separado, usando las que crean convenientes para el desarrollo de la partida. Animate a probarlas!",
   logo: "assets/projects/logo-catanazo.png",
   mockup: "assets/projects/mockup-catanazo.png",
   url: "https://catanazo.vercel.app/",
