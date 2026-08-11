@@ -68,8 +68,15 @@ const PROJECTS = [
   mockup: "assets/projects/mockup-zainorg.png",
   url: "https://zainorg.vercel.app/",
   tags: ["AI", "Viajes", "Mochila", "Valija", "Gratis"]
+},
+{
+  title: "Age Of Catan",
+  description: "Armamos tu mochila o valija por vos: contanos tu destino, el clima, cuántos días viajás, con quién vas y qué actividades tenés pensadas, y calculamos qué llevar, cuánto espacio ocupa y qué tamaño de equipaje te conviene.",
+  logo: "assets/projects/logo-catanazo.png",
+  mockup: "assets/projects/mockup-catanazo.png",
+  url: "https://catanazo.vercel.app/",
+  tags: ["CATAN", "Juego de mesa", "Amigos", "Gratis"]
 }
-
   /* 👇 Para sumar la 6ta app, descomentá y completá este bloque:
   ,{
     title: "Nombre de tu App 6",
