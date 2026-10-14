@@ -22,6 +22,14 @@
 
 const PROJECTS = [
   {
+  title: "Calcapp",
+  description: "Calcá cualquier imagen sobre papel usando la cámara de tu celular: cargá una foto, bajale la opacidad y dibujá siguiendo las líneas que ves en pantalla. Tiene modo boceto para pasar fotos a líneas, y tu dibujo queda guardado aunque cierres la app.",
+  logo: "assets/projects/logo-calcapp.png",
+  mockup: "assets/projects/mockup-calcapp.png",
+  url: "https://tu-calcapp.vercel.app/",
+  tags: ["Dibujo", "Arte", "Cámara", "Gratis"]
+},
+{
   title: "Aiva!",
   description: "Soy tu asesora de moda personal! Además de darte consejos de moda, ayuda a recomendar el talle exacto de una tabla de talles, y a estimar las medidas de una prenda de referencia.",
   logo: "assets/projects/logo-aiva.png",
