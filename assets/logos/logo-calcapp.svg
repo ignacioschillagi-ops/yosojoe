@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="120" fill="#8EE3D3"/>
+  <!-- hoja -->
+  <rect x="78" y="96" width="356" height="330" rx="34" fill="#FFFFFF" transform="rotate(-6 256 261)"/>
+  <!-- guía punteada a calcar (estrellita) -->
+  <path d="M256 136 L284 206 L358 210 L300 256 L322 330 L256 288 L190 330 L212 256 L154 210 L228 206 Z"
+        fill="none" stroke="#7FD3C3" stroke-width="13" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="1 24"/>
+  <!-- parte ya calcada -->
+  <path d="M256 136 L284 206 L358 210 L300 256 L322 330" fill="none" stroke="#1E4D4A" stroke-width="13" stroke-linejoin="round" stroke-linecap="round"/>
+  <!-- lápiz -->
+  <g transform="translate(322 330) rotate(-48) scale(.74)">
+    <polygon points="0,0 62,-27 62,27" fill="#FCE3C3"/>
+    <polygon points="0,0 22,-9.5 22,9.5" fill="#1E4D4A"/>
+    <rect x="62" y="-27" width="168" height="54" fill="#FF8C7A"/>
+    <rect x="62" y="-27" width="168" height="17" fill="#FFAB9D"/>
+    <rect x="230" y="-27" width="32" height="54" fill="#E6F6F2"/>
+    <rect x="262" y="-27" width="40" height="54" rx="15" fill="#B9A7F5"/>
+    <rect x="62" y="-27" width="240" height="54" rx="6" fill="none" stroke="#1E4D4A" stroke-width="8"/>
+    <polygon points="0,0 62,-27 62,27" fill="none" stroke="#1E4D4A" stroke-width="8" stroke-linejoin="round"/>
+  </g>
+</svg>
